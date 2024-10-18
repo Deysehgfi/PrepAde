@@ -1,0 +1,3 @@
+npm init -y
+npm i express mysql2 sequelize cors jsonwebtoken --save
+npm i -D nodemon 
