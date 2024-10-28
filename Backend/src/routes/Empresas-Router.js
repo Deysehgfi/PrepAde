@@ -3,10 +3,11 @@ import { Router } from "express";
 
 const router = Router()
 
-import { create } from "../controllers/Empresa-Controllers.js";
+import { create, getEmpresa } from "../controllers/Empresa-Controllers.js";
 
-router.get("/",  )
+router.get("/", getEmpresa)
 router.post("/", create)
+
 
 
 export default router;

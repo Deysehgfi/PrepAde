@@ -1,11 +1,12 @@
 import { Router } from "express"
 
-import { create } from "../controllers/Postagens-controllers.js"
+import { create, getAll, getPostagem } from "../controllers/Postagens-controllers.js"
 const router = Router()
 
 
-router.get("/")
+router.get("/", getAll)
 router.post("/", create)
+router.get("/:id", getPostagem)
 
 
 export default router;
